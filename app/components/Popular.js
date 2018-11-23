@@ -44,8 +44,7 @@ class Popular extends React.Component {
     })
   }
 
-  render() {
-    
+  render() {  
     return (
       <div>
         <SelectLanguage 
