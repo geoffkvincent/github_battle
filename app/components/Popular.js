@@ -3,6 +3,7 @@ var PropTypes = require('prop-types')
 
 class SelectedLanguage extends React.Component {
   render() {
+    var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
     return (
       <ul className='languages'>
         {languages.map(function(lang) {
@@ -44,7 +45,7 @@ class Popular extends React.Component {
   }
 
   render() {
-    var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
+    
     return (
       <div>
         <SelectLanguage 
