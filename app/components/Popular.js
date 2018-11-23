@@ -42,7 +42,6 @@ class Popular extends React.Component {
       }
     })
   }
-
   render() {  
     return (
       <div>
