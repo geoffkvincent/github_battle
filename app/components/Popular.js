@@ -19,7 +19,6 @@ function SelectedLanguage (props) {
     </ul>  
   ) 
 }
-
 SelectedLanguage.propTypes = {
   selectedLanguage: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
@@ -42,7 +41,7 @@ class Popular extends React.Component {
       }
     })
   }
-  
+
   render() {  
     return (
       <div>
