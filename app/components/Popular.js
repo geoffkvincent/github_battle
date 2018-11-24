@@ -19,6 +19,7 @@ function SelectedLanguage (props) {
     </ul>  
   ) 
 }
+
 SelectedLanguage.propTypes = {
   selectedLanguage: PropTypes.string.isRequired,
   onSelect: PropTypes.func.isRequired,
