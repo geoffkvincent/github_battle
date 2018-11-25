@@ -43,3 +43,8 @@ li {
 .space-list-items {
   margin-bottom: 7px;
 }
+
+.avatar {
+  width: 150;
+  border-radius: 50%;
+}
