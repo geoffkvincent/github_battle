@@ -16,7 +16,7 @@ class App extends React.Component {
         <div className='container'>  
           <Nav />   
           <Switch>
-            <Route exact path='/' component={Home} />
+            <Route exact path='/cool' component={Home} />
             <Route exact path='/battle' component={Battle} />
             <Route path='/popular' component={Popular} />
             <Route render={function () {
