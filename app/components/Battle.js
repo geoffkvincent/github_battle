@@ -19,6 +19,7 @@ class Battle extends React.Component {
       var newState = {}
       newState[id + 'Name'] = username
       newState[id + 'Image'] = 'https://github.com/' + username + '.png?size=200';
+      return
     });
   }
     
