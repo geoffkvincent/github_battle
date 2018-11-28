@@ -26,7 +26,9 @@ class Battle extends React.Component {
   render() {
     return (
       <div>
-        BATTLE!
+        <div>
+          
+        </div>
       </div>
     )
   }
