@@ -26,8 +26,8 @@ class Battle extends React.Component {
   render() {
     return (
       <div>
-        <div>
-          
+        <div className='row'>
+
         </div>
       </div>
     )
