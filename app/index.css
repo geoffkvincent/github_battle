@@ -19,7 +19,7 @@ a {
 }
 
 .row {
-  display:
+  display: flex;
 }
 
 .button {
