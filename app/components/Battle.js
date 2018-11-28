@@ -11,7 +11,7 @@ class Battle extends React.Component {
       playerTwoImage: null 
     }
     
-    this.handleSubmit = this.handleSubmit(this)
+    this.handleSubmit = this.handleSubmit(this);
   }
 
   handleSubmit(id, username) {
