@@ -1,7 +1,7 @@
 var React = require('react')
 
 class PlayerInput extends React.Component {
-  
+  render()
 }
 
 class Battle extends React.Component {
