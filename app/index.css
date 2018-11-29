@@ -20,7 +20,7 @@ a {
 
 .row {
   display: flex;
-  justify-content: null;
+  justify-content: space-around;
 }
 
 .button {
