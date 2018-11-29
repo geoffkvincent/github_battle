@@ -25,6 +25,7 @@ class Battle extends React.Component {
     
   render() {
     var playerOneName = this.state.playerOneName
+    var playerTwoName 
     return (
       <div>
         <div className='row'>
