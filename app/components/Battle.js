@@ -32,7 +32,7 @@ class Battle extends React.Component {
         <div className='row'>
           {!playerOneName &&
           <PlayerInput/> }
-          {!playerOneName &&
+          {!playerTwoName &&
           <PlayerInput/> }
         </div>
       </div>
