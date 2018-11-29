@@ -31,8 +31,11 @@ class Battle extends React.Component {
       <div>
         <div className='row'>
           {!playerOneName &&
-          <PlayerInput/> }
-          
+          <PlayerInput
+            id = 'playerOne'
+            
+          /> }
+
           {!playerTwoName &&
           <PlayerInput/> }
         </div>
