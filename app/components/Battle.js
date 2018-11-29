@@ -1,5 +1,9 @@
 var React = require('react')
 
+class PlayerInput extends React.Component {
+  
+}
+
 class Battle extends React.Component {
   constructor(props) {
     super(props);
