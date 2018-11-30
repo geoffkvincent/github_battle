@@ -47,7 +47,7 @@ class Battle extends React.Component {
 
           {!playerTwoName &&
           <PlayerInput
-            id = 'pla'
+            id = 'play'
             label = 'Player Two'
             onSubmit = {this.handleSubmit}
           />}
