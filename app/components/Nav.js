@@ -15,6 +15,6 @@ function Nav () {
       </li>
     </ul>
   )
-}
+};
 
 module.exports = Nav;
