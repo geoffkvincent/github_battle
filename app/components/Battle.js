@@ -33,7 +33,7 @@ class Battle extends React.Component {
     
   render() {
     var playerOneName = this.state.playerOneName;
-    var playerTwoName = this.state.playerTwoName;
+    var playerTwoName = this.state.playerTwoName
 
     return (
       <div>
