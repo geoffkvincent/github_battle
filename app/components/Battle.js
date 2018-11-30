@@ -55,6 +55,6 @@ class Battle extends React.Component {
       </div>
     )
   }
-};
+}
 
 module.exports = Battle
