@@ -14,8 +14,9 @@ function PlayerPreview (props) {
       </div>
       <button
         className='reset'
-        onClick={props.onReset.bind(null, props.id)}
-        ></button>
+        onClick={props.onReset.bind(null, props.id)}>
+          Reset
+      </button>
     </div>
   )
 }
