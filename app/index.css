@@ -51,7 +51,6 @@ a {
   font-weight: 200;
 }
 
-
 .button {
   color: #e6e6e6;
   background: #0a0a0a;
@@ -122,6 +121,19 @@ a {
 
 .active {
   font-weight: bold;
+}
+
+.reset {
+  border: none;
+  background: transparent;
+  color: #d0021b;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.reset:hover {
+  cursor: pointer;
 }
 
 .nav li {
