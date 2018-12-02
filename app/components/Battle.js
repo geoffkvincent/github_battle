@@ -15,6 +15,12 @@ function PlayerPreview (props) {
   )
 }
 
+PlayerPreview.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  onReset: PropTypes
+}
+
 class PlayerInput extends React.Component {
   constructor(props) {
     super(props);
