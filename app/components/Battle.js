@@ -99,6 +99,7 @@ class Battle extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleReset = this.handleReset.bind(this)
   }
   handleSubmit(id, username) {
     this.setState(function () {
@@ -108,6 +109,16 @@ class Battle extends React.Component {
       return newState;
     });
   }
+
+  handleReset(id) {
+    this.setState(function () {
+      var newState = {};
+      newState[id + 'Name'] = '';
+      newState[id + 'Image'] = null
+      return newState;
+    })
+  }
+
   render() {
     var playerOneName = this.state.playerOneName;
     var playerTwoName = this.state.playerTwoName;
