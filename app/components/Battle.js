@@ -1,5 +1,6 @@
 var React = require('react');
 var PropTypes = require('prop-types');
+var Link = require('react-router-dom').Link
 
 function PlayerPreview (props) {
   return (
@@ -158,6 +159,13 @@ class Battle extends React.Component {
               id='playerTwo'  
             />}
         </div>
+
+        {playerOneImage && playerTwoImage &&
+          <Link
+            className='button'
+            to={}>
+              Battle  
+          </Link>}
       </div>
     )
   }
