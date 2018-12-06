@@ -14,7 +14,8 @@ function Player (props) {
 }
 
 Player.propTypes = {
-  label: PropTypes.string.isRequired
+  label: PropTypes.string.isRequired,
+  score: PropTypes.number.isRequired
 }
 
 class Results extends React.Component {
