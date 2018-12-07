@@ -26,7 +26,7 @@ class Loading extends React.Component {
 }
 
 Loading.propTypes = {
-  text: PropTypes.string.
+  text: PropTypes.string.isRequired
 }
 
 Loading.defaultProps = {
