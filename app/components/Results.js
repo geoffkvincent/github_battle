@@ -6,6 +6,7 @@ var Link = require('react-router-dom').Link
 var PlayerPreview = require('./PlayerPreview')
 
 function Profile (props) {
+  var info = props.info
   return (
     <PlayerPreview username={info.login} avatar={info.avatar_url}>
       <ul className='space-list-items'>
@@ -21,12 +22,17 @@ function Profile (props) {
   )
 }
 
+
+Profile.propTypes = {
+  info: PropTypes.object.isRequired,
+}
+
 function Player (props) {
   return (
     <div>
       <h1 className='header'>{props.label}</h1>
       <h3 style={{textAlign: 'center'}}>Score: {props.score}</h3>
-      <Profile />
+      <Profile info={props.profile} />
     </div>
   )
 }
