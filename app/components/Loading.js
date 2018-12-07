@@ -9,6 +9,13 @@ var styles = {
 }
 
 class Loading extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state ={
+      text: 'Loading'
+    }
+  }
   render() {
     return (
       <p style={ styles.content }>
