@@ -86,7 +86,7 @@ class Results extends React.Component {
     var {error, winner, loser, loading } = this.state
 
     if (loading === true) {
-      return <p>Loading</p>
+      return <Loading />
     }
 
     if (error) {
