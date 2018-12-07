@@ -13,7 +13,7 @@ class Loading extends React.Component {
     super(props)
 
     this.state ={
-      text: 'Loading'
+      text: props.text
     }
   }
   render() {
