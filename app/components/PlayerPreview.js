@@ -1,3 +1,5 @@
+var React = require('react')
+
 function PlayerPreview (props) {
   return (
     <div>
