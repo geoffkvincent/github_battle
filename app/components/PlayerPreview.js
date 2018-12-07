@@ -26,3 +26,5 @@ PlayerPreview.propTypes = {
   id: PropTypes.string.isRequired,
   onReset: PropTypes.func.isRequired
 }
+
+module.exports = PlayerPreview;
