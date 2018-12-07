@@ -25,4 +25,8 @@ class Loading extends React.Component {
   }
 }
 
+Loading.defaultProps = {
+  text: 'Loading'
+}
+
 module.exports = Loading
