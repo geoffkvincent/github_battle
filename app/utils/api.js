@@ -1,31 +1,24 @@
 import axios from 'axios'
 
-var id = "YOUR_CLIENT_ID";
-var sec = "YOUR_SECRET_ID";
-var params = "?client_id=" + id + "&client_secret=" + sec;
+const id = "YOUR_CLIENT_ID";
+const sec = "YOUR_SECRET_ID";
+const params = `?client_id=${id}&client_secret=${sec}`;
 
 getProfile = (username) => {
-  return axios.get('https://api.github.com/users/' + username + params)
-    .then(function (user) {
-      return user.data
-    })
+  return axios.get(`https://api.github.com/users/${username}${params}`)
+    .then(({data}) => data)
 }
 
 getRepos = (username) => {
-  return axios.get('https://api.github.com/users/' + username + '/repos' + params + '&per_page=100')
+  return axios.get(`https://api.github.com/users/${username}/repos${params}'&per_page=100'`)
 }
 
 getStarCount = (repos) => {
-  return repos.data.reduce(function (count, repo) {
-    return count + repo.stargazers_count
-  }, 0)
+  return repos.data.reduce((count, {stargazers_count}) => count + stargazers_count, 0)
 }
 
-calculateScore = (profile, repos) => {
-  var followers = profile.followers
-  var totalStars = getStarCount(repos)
-
-  return (followers * 3) + totalStars
+calculateScore = ({followers}, repos) => {
+  return (followers * 3) + getStarCount(repos)
 }
 
 handleError = (error) => {
@@ -37,15 +30,10 @@ getUserData = (player) => {
   return axios.all([
     getProfile(player),
     getRepos(player)
-  ]).then(function (data) {
-    var profile = data[0]
-    var repos = data[1]
-
-    return {
-      profile: profile,
-      score: calculateScore(profile,repos)
-    }
-  })
+  ]).then(([profile, repos]) => ({
+      profile,
+      score: calculateScore(profile,repos)    
+  }))
 }
 
 sortPlayers = (players) => {
