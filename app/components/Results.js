@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import queryString from 'query-string';
-import {battle} from '../utils/api';
-import {Link} from 'react-router-dom';
-import PlayerPreview from './PlayerPreview';
-import Loading from './Loading';
+import React from 'react'
+import PropTypes from 'prop-types'
+import queryString from 'query-string'
+import { battle } from '../utils/api'
+import { Link } from 'react-router-dom'
+import PlayerPreview from './PlayerPreview'
+import Loading from './Loading'
 
 function Profile ({ info }) {
   return (
@@ -43,14 +43,11 @@ Player.propTypes = {
 }
 
 class Results extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      winner: null,
-      loser: null,
-      error: null,
-      loading: true,
-    }
+  state = {
+    winner: null,
+    loser: null,
+    error: null,
+    loading: true,
   }
   componentDidMount() {
     const { playerOneName, playerTwoName } = queryString.parse(this.props.location.search);
